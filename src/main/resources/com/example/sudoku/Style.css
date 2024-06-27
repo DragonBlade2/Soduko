@@ -1,0 +1,36 @@
+.background {
+         -fx-border-color:
+          linear-gradient(to bottom, #7E7E7E, #1E90FF, #8A2BE2), /* Top border */
+          linear-gradient(to right, #7E7E7E, #1E90FF, #8A2BE2), /* Right border */
+          linear-gradient(to top, #7E7E7E, #1E90FF, #8A2BE2), /* Bottom border */
+          linear-gradient(to left, #7E7E7E, #1E90FF, #8A2BE2); /* Left border */
+         -fx-border-width: 5px;
+	 -fx-background-color: #fff8dc;
+}
+
+.buttonSending {
+    -fx-background-color:
+	  linear-gradient(to bottom, #7E7E7E, #1E90FF, #8A2BE2), /* Top border */
+          linear-gradient(to right, #7E7E7E, #1E90FF, #8A2BE2), /* Right border */
+          linear-gradient(to top, #7E7E7E, #1E90FF, #8A2BE2), /* Bottom border */
+          linear-gradient(to left, #7E7E7E, #1E90FF, #8A2BE2); /* Left border */
+    -fx-background-insets: 0, 25%, 50%, 75%;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 4,0,0,1 );
+    -fx-transition-duration: 0.3s;
+}
+
+/* Define the style for the cool button when hovered */
+.buttonSending:hover {
+    -fx-background-color:
+        linear-gradient(to right, #0066FF, #6600FF),
+        linear-gradient(to right, #FF6600, #FF0066),
+        linear-gradient(to right, #00FF66, #66FF00),
+        linear-gradient(to right, #FFFF00, #00FFFF);
+    -fx-border-color: #2c24b4;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4) , 6,0,0,2 );
+    -fx-translate-x: 5px; /* Animate the button to the right on hover */
+}
